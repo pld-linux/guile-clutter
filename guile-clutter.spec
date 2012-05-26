@@ -1,22 +1,26 @@
 Summary:	Clutter library wrapper for Guile Scheme
 Summary(pl.UTF-8):	Wrapper biblioteki Clutter dla Guile Scheme
 Name:		guile-clutter
-Version:	0.8.0
+Version:	1.10.0
 Release:	1
 License:	GPL v2+
 Group:		Libraries
 Source0:	http://ftp.gnu.org/gnu/guile-gnome/guile-clutter/%{name}-%{version}.tar.gz
-# Source0-md5:	735196c4fa5782b9295ad70ade69deea
+# Source0-md5:	ea5566b45f0b9b395f52c562beb4d0ee
+Patch0:		%{name}-info.patch
 URL:		http://www.gnu.org/software/guile-gnome/
-BuildRequires:	clutter-devel >= 0.8.0
+BuildRequires:	clutter-devel >= 1.10
 BuildRequires:	g-wrap-devel >= 1.9.8
-BuildRequires:	guile-devel >= 5:1.8.0
+BuildRequires:	guile-devel >= 5:1.10.0
+BuildRequires:	guile-gnome-atk >= 2
+BuildRequires:	guile-gnome-cairo >= 2
 BuildRequires:	guile-gnome-glib-devel >= 2
+BuildRequires:	guile-gnome-pango >= 2
 BuildRequires:	pkgconfig >= 1:0.9.0
 BuildRequires:	texinfo
-Requires:	clutter >= 0.8.0
+Requires:	clutter >= 1.10
 Requires:	g-wrap >= 1.9.8
-Requires:	guile >= 5:1.8.0
+Requires:	guile >= 5:1.10.0
 Requires:	guile-gnome-glib >= 2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -28,6 +32,7 @@ Guile-Clutter obudowuje bibliotekę Clutter dla Guile Scheme.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %configure

@@ -1,0 +1,22 @@
+--- guile-clutter-1.10.0/doc/clutter-glx/guile-gnome-clutter-glx.texi.orig	2012-05-08 16:05:30.000000000 +0200
++++ guile-clutter-1.10.0/doc/clutter-glx/guile-gnome-clutter-glx.texi	2012-05-26 12:14:51.630080228 +0200
+@@ -34,7 +34,7 @@
+ 
+ @dircategory The Algorithmic Language Scheme
+ @direntry 
+-* Guile-Clutter-GLX: (guile-gnome-clutter-glx.info).  Clutter GLX integration.
++* Guile-Clutter-GLX: (guile-gnome-clutter-glx).	Clutter GLX integration
+ @end direntry
+ 
+ @titlepage 
+--- guile-clutter-1.10.0/doc/clutter/guile-gnome-clutter.texi.orig	2012-05-09 16:53:41.000000000 +0200
++++ guile-clutter-1.10.0/doc/clutter/guile-gnome-clutter.texi	2012-05-26 12:14:32.943414346 +0200
+@@ -34,7 +34,7 @@
+ 
+ @dircategory The Algorithmic Language Scheme
+ @direntry 
+-* Guile-Clutter: (guile-gnome-clutter.info).  A fast graphical canvas toolkit.
++* Guile-Clutter: (guile-gnome-clutter).	A fast graphical canvas toolkit
+ @end direntry
+ 
+ @titlepage 
