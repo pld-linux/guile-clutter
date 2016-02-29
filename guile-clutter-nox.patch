@@ -1,0 +1,11 @@
+--- guile-clutter-1.12.2.1/configure.ac.orig	2015-12-08 02:26:30.000000000 +0100
++++ guile-clutter-1.12.2.1/configure.ac	2016-02-29 21:26:09.660887300 +0100
+@@ -116,7 +116,7 @@
+ GUILE_GNOME_MODULE_REQUIRED([gnome gw glib])
+ GUILE_GNOME_MODULE_REQUIRED([gnome gw gobject])
+ GUILE_GNOME_MODULE_REQUIRED([gnome gw gobject-spec])
+-GUILE_GNOME_MODULE_REQUIRED([gnome gw gdk]) ## gdk-pixbuf
++dnl GUILE_GNOME_MODULE_REQUIRED([gnome gw gdk]) ## gdk-pixbuf, requires $DISPLAY
+ GUILE_GNOME_MODULE_REQUIRED([gnome gw cairo])
+ GUILE_GNOME_MODULE_REQUIRED([gnome gw cairo-spec])
+ GUILE_GNOME_MODULE_REQUIRED([gnome gw atk])
