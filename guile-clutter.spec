@@ -2,7 +2,7 @@ Summary:	Clutter library wrapper for Guile Scheme
 Summary(pl.UTF-8):	Wrapper biblioteki Clutter dla Guile Scheme
 Name:		guile-clutter
 Version:	1.12.2.1
-Release:	1
+Release:	2
 License:	GPL v2+
 Group:		Libraries
 Source0:	http://ftp.gnu.org/gnu/guile-gnome/guile-clutter/%{name}-%{version}.tar.gz
