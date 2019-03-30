@@ -1,0 +1,22 @@
+--- guile-clutter-1.12.2.1/m4/guile.m4~	2015-11-19 04:28:36.000000000 +0100
++++ guile-clutter-1.12.2.1/m4/guile.m4	2019-03-30 11:20:29.022102681 +0100
+@@ -64,7 +64,7 @@
+ #
+ AC_DEFUN([GUILE_PKG],
+  [PKG_PROG_PKG_CONFIG
+-  _guile_versions_to_search="m4_default([$1], [2.2 2.0])"
++  _guile_versions_to_search="2.2 2.0"
+   if test -n "$GUILE_EFFECTIVE_VERSION"; then
+     _guile_tmp=""
+     for v in $_guile_versions_to_search; do
+--- guile-clutter-1.12.2.1/configure.ac~	2019-03-30 11:21:03.000000000 +0100
++++ guile-clutter-1.12.2.1/configure.ac	2019-03-30 11:23:23.344355111 +0100
+@@ -73,7 +73,7 @@
+   [DISABLE_DEPRECATED=false])
+ 
+ GUILE_PKG([2.2, 2.0])
+-GUILE_PROGS([2.0.11])
++GUILE_PROGS()
+ GUILE_GLOBAL_SITE_DIR
+ GUILE_SITE_DIR
+ GUILE_SITE_CCACHE_DIR
